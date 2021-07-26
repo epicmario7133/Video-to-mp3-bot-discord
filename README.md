@@ -10,3 +10,9 @@ Things to do before start main.py:
 
 Things to implement in the future:
 - [ ] Add more video formats
+
+Example video:
+
+
+[![](https://img.youtube.com/vi/foHMV908I1E/0.jpg)](https://www.youtube.com/watch?v=foHMV908I1E)
+
