@@ -1,4 +1,12 @@
 # Video-to-mp3-bot-discord
 Bot which automatically converts videos to mp3
+Things to do before start main.py:
+1) Create 2 folders named mp3 and mp4
+2) Change line 40 and set the folder address
+3) Insert the token in the .env file
+4) pip3 install -r requirements.txt
+5) install ffmpeg (on ubuntu: sudo apt-get install ffmpeg)
+6) Leave a star on github :D
 
-change line 40 and set the folder address
+Things to implement in the future:
+- [ ] Add more video formats
