@@ -19,6 +19,9 @@ async def on_message(message):
 
     if message.author == client.user:
         return
+    
+    if message.content.startswith('!about'):
+        await message.channel.send('Created by EpicMario71, source code: https://github.com/epicmario7133/Video-to-mp3-bot-discord')
 
     if str(message.attachments) == "[]": # Checks if there is an attachment on the message
         return
