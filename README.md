@@ -1,7 +1,7 @@
 # Video-to-mp3-bot-discord
 Bot which automatically converts videos to mp3
 Things to do before start main.py:
-1) Create 2 folders named mp3 and mp4
+1) Create 2 folders named mp3, mp4, avi, webm and mov
 2) Change line 40 and 42 and set the folder address
 3) Insert the token in the .env file
 4) pip3 install -r requirements.txt
