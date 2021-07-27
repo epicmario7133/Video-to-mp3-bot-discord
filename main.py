@@ -31,13 +31,13 @@ async def on_message(message):
         pass
 
     else: # If there is it gets the filename from message.attachments
-        data["work"] = "1"
-        with open('data.json', 'w') as outfile:
-            json.dump(data, outfile)
 
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         if filename.endswith(".mp4"): # Checks if it is a .mp4 file
+            data["work"] = "1"
+            with open('data.json', 'w') as outfile:
+                json.dump(data, outfile)
             await message.attachments[0].save(fp="mp4/{}".format("video.mp4")) #save flie
             await message.channel.send('I\'m converting the video give me 10 seconds') 
             os.system("ffmpeg -i /home/ubuntu/bot-mp3/mp4/video.mp4 -y /home/ubuntu/bot-mp3/mp3/audio.mp3") #convert whit ffmpeg (-y to overwrite old file)
