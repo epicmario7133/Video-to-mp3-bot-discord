@@ -35,6 +35,7 @@ async def on_message(message):
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         if filename.endswith(".mp4"): # Checks if it is a .mp4 file
+            await message.channel.send('Starting')
             data["work"] = "1"
             with open('data.json', 'w') as outfile:
                 json.dump(data, outfile)
@@ -66,6 +67,7 @@ async def on_message(message):
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         if filename.endswith(".mov"): # Checks if it is a .mov file
+            await message.channel.send('Starting')
             data["work"] = "1"
             with open('data.json', 'w') as outfile:
                 json.dump(data, outfile)
@@ -94,6 +96,7 @@ async def on_message(message):
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         if filename.endswith(".avi"): # Checks if it is a .avi file
+            await message.channel.send('Starting')
             data["work"] = "1"
             with open('data.json', 'w') as outfile:
                 json.dump(data, outfile)
@@ -124,6 +127,7 @@ async def on_message(message):
         split_v1 = str(message.attachments).split("filename='")[1]
         filename = str(split_v1).split("' ")[0]
         if filename.endswith(".webm"): # Checks if it is a .avi file
+            await message.channel.send('Starting')
             data["work"] = "1"
             with open('data.json', 'w') as outfile:
                 json.dump(data, outfile)
